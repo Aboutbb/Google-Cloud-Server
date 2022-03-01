@@ -16,7 +16,7 @@
 
 7. Connect => Open in browser window
 
-##VM terminal:
+## VM terminal:
 input in terminal everything that goes after $
 like:
 @instance-2:~$`sudo adduser apps`
