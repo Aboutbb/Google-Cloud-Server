@@ -1,8 +1,8 @@
 ## Google cloud serivce:
 1. Go to: https://cloud.google.com/
 2. Login to your account (or create new account)
-3. press button **Get Started For Free**
-4. set up account (**phone and credit card needed!**)
+3. Press button **Get Started For Free**
+4. Set up account (**phone and credit card needed!**)
 5. Compute engine => VM instances
 6. CREATE INSTANCE
 	- Region - any Europe
@@ -10,8 +10,8 @@
 	- Boot disk => Change 
 	- Operating system - *Ubuntu*
 	- Firewall 
- - *allow http*
- - *allow https*
+	 - *allow http*
+	 - *allow https*
 	- Keep rest default
 
 7. Connect => Open in browser window
