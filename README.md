@@ -50,13 +50,13 @@ like:
         Hello from Docker!
         This message shows that your installation appears to be working correctly.
 
-##install git:
+## Install git:
 
 
     user@instance-2:~$ sudo apt-get update
     user@instance-2:~$ sudo apt-get install git
 
-##Install python:
+## Install python:
 
 
     @instance-2:~$ sudo apt update
@@ -67,13 +67,13 @@ like:
     Y
     @instance-2:~$ sudo apt install python3-pip
 
-##Clone repo:
+## Clone repo:
 
 
     @instance-2:~$ su apps
     @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
 
-##Prepare and attack:
+## Prepare and attack:
 
     
 
@@ -81,7 +81,7 @@ like:
     @instance-2:~/attacker$ pip3 install -r requirements.txt
     @instance-2:~/attacker$ sudo python3 attack.py 500
 
-##After exit:
+## After exit:
 
 
     @instance-2:~$ cd attacker
