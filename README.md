@@ -18,9 +18,9 @@
 
 ## VM terminal:
 input in terminal everything that goes after $
-like:
-@instance-2:~$`sudo adduser apps`
-@instance-2:~/attacker$ `sudo git fetch`
+	like:
+- @instance-2:~$`sudo adduser apps`
+- @instance-2:~/attacker$ `sudo git fetch`
 
     
 
