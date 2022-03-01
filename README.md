@@ -17,14 +17,14 @@
 7. Connect => Open in browser window
 
 ## VM terminal:
-input in terminal everything that goes after $
-	like:
+input in terminal everything that goes after `$`
+like:
 - @instance-2:~$`sudo adduser apps`
 - @instance-2:~/attacker$ `sudo git fetch`
 
-    
+     
 
-    user@instance-2:~$ sudo adduser apps
+    	user@instance-2:~$ sudo adduser apps
         ENTER x6
         user@instance-2:~$ sudo usermod -aG sudo apps
         user@instance-2:~$ su apps
