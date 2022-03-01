@@ -95,7 +95,26 @@
 
 ## After exit:
 
+    @instance-2:~$ su apps
+    	-> Password: 
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
+    
 
+##
+Залишаєте на певний час, якщо побачити що більше не атакується:
+
+	СTRL-C
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
+
+
+Можете відкривати декілька консолей щоб збільшити навантаження
+    
+    @instance-2:~$ su apps
+    	-> Password: 
     @instance-2:~$ cd attacker
     @instance-2:~/attacker$ sudo git fetch
     @instance-2:~/attacker$ sudo python3 attack.py 500
