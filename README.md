@@ -19,7 +19,7 @@ Dont Forget to unsubscribe after war is over!!!
 
 7. Connect => Open in browser window
 
-## 1. VM terminal:
+## 0. VM terminal:
 input in terminal everything that goes after `$`
 
 like:
@@ -28,6 +28,7 @@ like:
 
 Dont use this commands yet!
 
+## 1. Install Docker
      
 
     user@instance-2:~$ sudo adduser apps
@@ -87,7 +88,7 @@ Dont use this commands yet!
     @instance-2:~/attacker$ pip3 install -r requirements.txt
     @instance-2:~/attacker$ sudo python3 attack.py 500
 
-## 6. After exit:
+## After exit:
 
 
     @instance-2:~$ cd attacker
