@@ -1,3 +1,6 @@
+Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (with this settings enough for 1.5 month)
+Dont Forget to unsubscribe after war is over!!!
+
 ## Google cloud serivce:
 1. Go to: https://cloud.google.com/
 2. Login to your account (or create new account)
@@ -16,11 +19,12 @@
 
 7. Connect => Open in browser window
 
-## VM terminal:
+## 1. VM terminal:
 input in terminal everything that goes after `$`
 like:
 - @instance-2:~$`sudo adduser apps`
 - @instance-2:~/attacker$ `sudo git fetch`
+Dont use this commands yet!
 
      
 
@@ -50,13 +54,13 @@ like:
         Hello from Docker!
         This message shows that your installation appears to be working correctly.
 
-## Install git:
+## 2. Install git:
 
 
     user@instance-2:~$ sudo apt-get update
     user@instance-2:~$ sudo apt-get install git
 
-## Install python:
+## 3. Install python:
 
 
     @instance-2:~$ sudo apt update
@@ -67,13 +71,13 @@ like:
     Y
     @instance-2:~$ sudo apt install python3-pip
 
-## Clone repo:
+## 4. Clone repo:
 
 
     @instance-2:~$ su apps
     @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
 
-## Prepare and attack:
+## 5. Prepare and attack:
 
     
 
@@ -81,7 +85,7 @@ like:
     @instance-2:~/attacker$ pip3 install -r requirements.txt
     @instance-2:~/attacker$ sudo python3 attack.py 500
 
-## After exit:
+## 6. After exit:
 
 
     @instance-2:~$ cd attacker
