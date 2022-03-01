@@ -10,8 +10,8 @@
 	- Boot disk => Change 
 	- Operating system - *Ubuntu*
 	- Firewall 
-	 -- *allow http*
-	 -- *allow https*
+	 - - *allow http*
+	 - - *allow https*
 	- Keep rest default
 
 7. Connect => Open in browser window
