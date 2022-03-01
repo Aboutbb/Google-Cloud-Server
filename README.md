@@ -1,5 +1,6 @@
 Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (with this settings enough for 1.5 month)
-Dont Forget to unsubscribe after war is over!!!
+	**phone and credit card needed!**
+	Dont Forget to unsubscribe after war is over!!!
 
 ## Google cloud serivce:
 1. Go to: https://cloud.google.com/
