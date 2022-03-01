@@ -1,4 +1,4 @@
-**Change language [Українська](README.md).**
+**Змінити мову [Українська](README.md).**
 
 Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (with this settings enough for 1.5 month)
 
@@ -10,7 +10,7 @@ Dont Forget to unsubscribe after war is over!!!
 1. Go to: https://cloud.google.com/
 2. Login to your account (or create new account)
 3. Press button **Get Started For Free**
-4. Set up account (**phone and credit card needed!**)
+4. Set up account (**phone and credit card needed!**) (*you can use number form here https://receive-smss.com/*)
 5. Compute engine => VM instances
 6. CREATE INSTANCE
 	- Region - any Europe
