@@ -1,4 +1,4 @@
-**Change language [Українська](README.ua.md).**
+**Change language [Українська](README.md).**
 
 Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (with this settings enough for 1.5 month)
 
