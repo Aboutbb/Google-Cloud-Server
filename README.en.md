@@ -95,7 +95,26 @@ Dont use this commands yet!
 
 ## After exit:
 
+    @instance-2:~$ su apps
+    	-> Password: 
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
+    
 
+##
+leave it for a while. If progress stops:
+
+	СTRL-C
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
+
+
+Open several new consoles for maximum effort (not more than 3):
+    
+    @instance-2:~$ su apps
+    	-> Password: 
     @instance-2:~$ cd attacker
     @instance-2:~/attacker$ sudo git fetch
     @instance-2:~/attacker$ sudo python3 attack.py 500
