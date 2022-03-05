@@ -81,6 +81,13 @@ Dont use this commands yet!
     apps@instance-3:/home/user$ cd attacker/
     apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
 
+## After exit:
+
+    user@instance-2:~$ su apps
+    	-> Password: 
+    user@instance-2:~$ cd attacker
+    apps@instance-3:/home/user$ cd attacker/
+    apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
 
 # Attack with Python
 ## 1. Install python:
