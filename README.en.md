@@ -81,7 +81,7 @@ Dont use this commands yet!
     apps@instance-3:/home/user$ cd attacker/
     apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
 
-## After exit:
+### After exit:
 
     user@instance-2:~$ su apps
     	-> Password: 
@@ -106,7 +106,7 @@ Dont use this commands yet!
     @instance-2:~/attacker$ pip3 install -r requirements.txt
     @instance-2:~/attacker$ sudo python3 attack.py 500
 
-## After exit:
+### After exit:
 
     @instance-2:~$ su apps
     	-> Password: 
@@ -115,7 +115,7 @@ Dont use this commands yet!
     @instance-2:~/attacker$ sudo python3 attack.py 500
     
 
-##
+###
 leave it for a while. If progress stops:
 
 	СTRL-C
