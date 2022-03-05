@@ -37,11 +37,12 @@ Dont use this commands yet!
      
 
     user@instance-2:~$ sudo adduser apps
+    	-> Password:
     	-> ENTER x6
     user@instance-2:~$ sudo usermod -aG sudo apps
     user@instance-2:~$ su apps
     	-> Password:
-    apps@instance-2:/home/user$ sudo ls
+    apps@instance-2:/home/user$ sudo ls // check
     [sudo] password for apps:
     apps@instance-2:/home/user$ exit
     user@instance-2:~$ su - apps
@@ -64,12 +65,25 @@ Dont use this commands yet!
 
 ## 2. Install git:
 
-
     user@instance-2:~$ sudo apt-get update
     user@instance-2:~$ sudo apt-get install git
+    
+## 3. Clone repo:
 
-## 3. Install python:
+    apps@instance-3:~$ exit
+    user@instance-3:~$ su apps
+    	-> Password
+    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
+    
+    
+# Attack with Docker-compose
+	
+    apps@instance-3:/home/user$ cd attacker/
+    apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
 
+
+# Attack with Python
+## 1. Install python:
 
     @instance-2:~$ sudo apt update
     @instance-2:~$ sudo apt install software-properties-common
@@ -79,15 +93,7 @@ Dont use this commands yet!
     	-> Y
     @instance-2:~$ sudo apt install python3-pip
 
-## 4. Clone repo:
-
-
-    @instance-2:~$ su apps
-    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
-
-## 5. Prepare and attack:
-
-    
+## 2. Prepare and attack:
 
     @instance-2:~$ cd attacker
     @instance-2:~/attacker$ pip3 install -r requirements.txt
