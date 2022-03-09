@@ -9,11 +9,11 @@
 2. Залогінся в свій акаунт (або створи новий)
 3. Нажми **Get Started For Free**
 4. Зареєструйся (**Потрібно буде вказати номер телефону та кредитну карточку**) (*номер можна взяти тут https://receive-smss.com/*)
-> 5. Compute engine => VM instances 
->> ![photo_2022-03-01_13-36-13 - Copy](https://user-images.githubusercontent.com/98760727/157469549-dd85283d-26dc-4b70-940c-88d32f28080b.jpg)
+5. Compute engine => VM instances 
+> ![photo_2022-03-01_13-36-13 - Copy](https://user-images.githubusercontent.com/98760727/157469549-dd85283d-26dc-4b70-940c-88d32f28080b.jpg)
 
-> 6. CREATE INSTANCE
->> ![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
+6. CREATE INSTANCE
+> ![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
 > - Region - будь-який з Europe
 > - Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 >> ![photo_2022-03-01_13-36-16 - Copy](https://user-images.githubusercontent.com/98760727/157469599-584882e3-497d-4ed4-8b12-49c6d192dc17.jpg)
@@ -25,10 +25,11 @@
 >>	- *allow http*
 >>	- *allow https*
 >>> ![photo_2022-03-01_13-36-19 - Copy](https://user-images.githubusercontent.com/98760727/157469677-c782156a-0fde-439f-931e-745547c732eb.jpg)
+>
 > - **Все решту не змінюєм**
 
-> 7. Connect => Open in browser window
->> ![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
+7. Connect => Open in browser window
+> ![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
 
 ## 0. VM terminal:
 Пиши в термінал все що після `$`
