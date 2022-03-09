@@ -11,15 +11,14 @@
 4. Зареєструйся (**Потрібно буде вказати номер телефону та кредитну карточку**) (*номер можна взяти тут https://receive-smss.com/*)
 5. Compute engine => VM instances
 6. CREATE INSTANCE
-	- Region - будь-який з Europe
-	- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
-	- Boot disk => Change 
-	  - Operating system - *Ubuntu*
-	
-	- Firewall 
-	 - - *allow http*
-	 - - *allow https*
-	- Keep rest default
+- Region - будь-який з Europe
+- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
+- Boot disk => Change 
+	- Operating system - *Ubuntu*
+- Firewall 
+	- *allow http*
+	- *allow https*
+- Все решту не змінюєм
 
 7. Connect => Open in browser window
 
