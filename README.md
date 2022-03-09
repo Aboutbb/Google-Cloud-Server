@@ -26,7 +26,7 @@
 Пиши в термінал все що після `$`
 
 Наприклад:
-- @instance-2:~$`sudo adduser apps`
+- @instance-2:~$ `sudo adduser apps`
 - @instance-2:~/attacker$ `sudo git fetch`
 
 
