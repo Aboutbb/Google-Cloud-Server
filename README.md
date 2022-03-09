@@ -165,7 +165,7 @@
 
 перевіряєм чи контейнери живі:
 	
-	apps@instance-2:~/attacker$ docker-compose logs
+	apps@instance-2:~/attacker$ docker-compose top
 	
 якщо немає логів або помилка перезапускаєм контейнери:
 
