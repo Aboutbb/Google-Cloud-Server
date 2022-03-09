@@ -26,7 +26,7 @@
 
 ![photo_2022-03-01_13-36-17](https://user-images.githubusercontent.com/98760727/157467873-af82a246-d895-4427-940f-918161d85c65.jpg)
 
-	- Operating system - *Ubuntu*
+- Operating system - *Ubuntu*
 
 ![photo_2022-03-01_13-36-18](https://user-images.githubusercontent.com/98760727/157467905-f7ef5bff-daab-418f-a2a0-8d980dea028c.jpg)
 
