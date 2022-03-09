@@ -14,8 +14,7 @@
 	- Region - будь-який з Europe
 	- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 	- Boot disk => Change 
-	 - - Operating system - *Ubuntu*
-	
+	  - Operating system - *Ubuntu*
 	
 	- Firewall 
 	 - - *allow http*
@@ -105,30 +104,42 @@
 
 
 ## 2. Prepare and attack:
-
  
     apps@instance-2:~$ cd attacker
     apps@instance-2:~/attacker$ pip3 install -r requirements.txt
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
-
-##
-Залишаєте на певний час, якщо побачити що більше не атакується:
-
-	СTRL-C
-    apps@instance-2:~$ cd attacker
-    apps@instance-2:~/attacker$ sudo git pull
-    apps@instance-2:~/attacker$ sudo python3 attack.py 500
-
-
 Можете відкривати декілька консолей щоб збільшити навантаження (не більше 3):
+
 якщо перед `@` не пише `apps`, заходим в `apps`:
 
     user@instance-2:~$ su apps
     	-> Password: 
-		
-запускаєм атаку з python
+	
+якщо після `user@instance-2:~` не пише `/attacker`, заходим в `/attacker`:
 
     apps@instance-2:~$ cd attacker
+		
+запускаєм атаку з python:
+
     apps@instance-2:~/attacker$ sudo git pull
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
+    
+
+#
+Залишаєте на певний час, якщо побачити що більше не атакується:
+
+	СTRL-C x2
+    apps@instance-2:~/attacker$ sudo git pull
+    	якщо docker-compose:
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+    	якщо python:
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
+    
+Якщо немає реакції на `CTRL-C`
+	- Закриваєм консоль
+	- Перезапускаєм серевер
+		- три крапки => `Stop` => чекаєм поки зупиниться (1-3 хв)
+		- три крапки => `Start/Resume`
+	- Відкриваєм консоль
+		
