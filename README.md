@@ -1,10 +1,8 @@
 **Change language [English](README.en.md).**
 
-Покрокова інструкція як створити віртуальну машину google з безоплатним пробним періодом у 300$ (вистачить на 1.5 місяці)
+Покрокова інструкція як створити віртуальну машину google з безоплатним пробним періодом у 300$ (після 300$ гроші не зніматиме якщо не купляти підписку преміум)
 
-**Потрібно буде вказати номер телефону та кредитну карточку** (гроші не зніматиме поки не закінчиться пробні 300$)
-
-Поставте нагадування щоб відписатись!!!
+**Потрібно буде вказати номер телефону та кредитну карточку** 
 
 ## Google cloud serivce:
 1. Передйди: https://cloud.google.com/
@@ -13,10 +11,12 @@
 4. Зареєструйся (**Потрібно буде вказати номер телефону та кредитну карточку**) (*номер можна взяти тут https://receive-smss.com/*)
 5. Compute engine => VM instances
 6. CREATE INSTANCE
-	- Region - any Europe
+	- Region - будь-який з Europe
 	- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 	- Boot disk => Change 
-	- Operating system - *Ubuntu*
+	 - - Operating system - *Ubuntu*
+	
+	
 	- Firewall 
 	 - - *allow http*
 	 - - *allow https*
@@ -37,12 +37,13 @@
      
 
     user@instance-2:~$ sudo adduser apps
+    	-> Password:
     	-> ENTER x6
     user@instance-2:~$ sudo usermod -aG sudo apps
     user@instance-2:~$ su apps
     	-> Password:
     apps@instance-2:/home/user$ sudo ls
-    [sudo] password for apps:
+    	-> Password for apps:
     apps@instance-2:/home/user$ exit
     user@instance-2:~$ su - apps
     	-> Password:
@@ -65,56 +66,69 @@
 ## 2. Install git:
 
 
-    user@instance-2:~$ sudo apt-get update
-    user@instance-2:~$ sudo apt-get install git
-
-## 3. Install python:
-
-
-    @instance-2:~$ sudo apt update
-    @instance-2:~$ sudo apt install software-properties-common
-    @instance-2:~$ sudo add-apt-repository ppa:deadsnakes/ppa
-    	-> ENTER
-    @instance-2:~$ sudo apt install python3.8
-    	-> Y
-    @instance-2:~$ sudo apt install python3-pip
-
-## 4. Clone repo:
-
-
-    @instance-2:~$ su apps
-    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
-
-## 5. Prepare and attack:
-
+    apps@instance-2:~$ sudo apt-get update
+    apps@instance-2:~$ sudo apt-get install git
     
+## 3. Clone repo:
 
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ pip3 install -r requirements.txt
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+	apps@instance-2:~$ exit
+    user@instance-2:~$ su apps
+		-> Password:
+    apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
+    
+# Атакуєм з Docker-Compose:
+якщо перед `@` не пише `apps`, заходим в `apps`:
 
-## After exit:
-
-    @instance-2:~$ su apps
+    user@instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+
+Будуєм контейнери і атакуєм:
+
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ sudo git pull
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+
+
+Якщо не виходить можете попробувати атакувати з Python
+
+# Атакуєм з Python:
+## 1. Install Python:
+
+
+    apps@instance-2:~$ sudo apt update
+    apps@instance-2:~$ sudo apt install software-properties-common
+    apps@instance-2:~$ sudo add-apt-repository ppa:deadsnakes/ppa
+    	-> ENTER
+    apps@instance-2:~$ sudo apt install python3.8
+    	-> Y
+    apps@instance-2:~$ sudo apt install python3-pip
+
+
+## 2. Prepare and attack:
+
+ 
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ pip3 install -r requirements.txt
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
 
 ##
 Залишаєте на певний час, якщо побачити що більше не атакується:
 
 	СTRL-C
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ sudo git pull
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
 
 
 Можете відкривати декілька консолей щоб збільшити навантаження (не більше 3):
-    
-    @instance-2:~$ su apps
+якщо перед `@` не пише `apps`, заходим в `apps`:
+
+    user@instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+		
+запускаєм атаку з python
+
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ sudo git fetch
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
