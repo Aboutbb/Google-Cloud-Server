@@ -78,10 +78,14 @@
 
     user@instance-2:~$ su apps
     	-> Password: 
+	
+якщо після `user@instance-2:~` не пише `/attacker`, заходим в `/attacker`:
+
+    apps@instance-2:~$ cd attacker
+		
 
 Будуєм контейнери і атакуєм:
 
-    apps@instance-2:~$ cd attacker
     apps@instance-2:~/attacker$ sudo git pull
     apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
 
