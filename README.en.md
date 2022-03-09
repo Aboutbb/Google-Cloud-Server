@@ -122,7 +122,7 @@ Start the attack:
 
 # Leave it for a while. If progress stops:
 
-	СTRL-C x2
+		СTRL-C x2
     apps@instance-2:~/attacker$ sudo git pull
     	with docker-compose:
     apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
