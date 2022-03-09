@@ -11,36 +11,41 @@
 4. Зареєструйся (**Потрібно буде вказати номер телефону та кредитну карточку**) (*номер можна взяти тут https://receive-smss.com/*)
 5. Compute engine => VM instances 
 
-![photo_2022-03-01_13-36-13](https://user-images.githubusercontent.com/98760727/157467451-9dc41d2a-2b55-40eb-8f89-464abcad6aff.jpg)
+![photo_2022-03-01_13-36-13 - Copy](https://user-images.githubusercontent.com/98760727/157469549-dd85283d-26dc-4b70-940c-88d32f28080b.jpg)
+
 
 6. CREATE INSTANCE
 
-![photo_2022-03-01_13-36-15](https://user-images.githubusercontent.com/98760727/157467681-bdea78aa-0e14-461e-9269-a0a3ee7bb03f.jpg)
+![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
+
 
 - Region - будь-який з Europe
 - Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 
-![photo_2022-03-01_13-36-16](https://user-images.githubusercontent.com/98760727/157467827-6d6e5658-3471-4d64-9c03-6df7cbe70f50.jpg)
+![photo_2022-03-01_13-36-16 - Copy](https://user-images.githubusercontent.com/98760727/157469599-584882e3-497d-4ed4-8b12-49c6d192dc17.jpg)
+
 
 - Boot disk => Change 
 
-![photo_2022-03-01_13-36-17](https://user-images.githubusercontent.com/98760727/157467873-af82a246-d895-4427-940f-918161d85c65.jpg)
+![photo_2022-03-01_13-36-17 - Copy](https://user-images.githubusercontent.com/98760727/157469618-0e539d2f-41ad-40dc-a6af-eeb62dbaf0a1.jpg)
 
 - Operating system - *Ubuntu*
 
-![photo_2022-03-01_13-36-18](https://user-images.githubusercontent.com/98760727/157467905-f7ef5bff-daab-418f-a2a0-8d980dea028c.jpg)
+![photo_2022-03-01_13-36-18 - Copy](https://user-images.githubusercontent.com/98760727/157469648-17521ca3-60f9-4551-9a23-1827df39c83f.jpg)
+
 
 - Firewall 
 	- *allow http*
 	- *allow https*
 
-![photo_2022-03-01_13-36-19](https://user-images.githubusercontent.com/98760727/157467931-a016398a-d202-4e96-bd87-ea913f84e439.jpg)
+![photo_2022-03-01_13-36-19 - Copy](https://user-images.githubusercontent.com/98760727/157469677-c782156a-0fde-439f-931e-745547c732eb.jpg)
+
 
 - Все решту не змінюєм
 
 7. Connect => Open in browser window
 
-![photo_2022-03-01_13-36-20](https://user-images.githubusercontent.com/98760727/157467952-6dba8a6e-a085-41d3-bb3a-058716257ba1.jpg)
+![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
 
 ## 0. VM terminal:
 Пиши в термінал все що після `$`
