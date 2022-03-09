@@ -1,10 +1,8 @@
 **Змінити мову [Українська](README.md).**
 
-Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (with this settings enough for 1.5 month)
+Here is step-by-step instruction how to set up google virtual machine with 300$ free credits (you wont be charged after 300$ unless you manually subscribe to premium)
 
 **phone and credit card needed!**
-
-Dont Forget to unsubscribe after war is over!!!
 
 ## Google cloud serivce:
 1. Go to: https://cloud.google.com/
@@ -13,14 +11,14 @@ Dont Forget to unsubscribe after war is over!!!
 4. Set up account (**phone and credit card needed!**) (*you can use number form here https://receive-smss.com/*)
 5. Compute engine => VM instances
 6. CREATE INSTANCE
-	- Region - any Europe
-	- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
-	- Boot disk => Change 
-	- Operating system - *Ubuntu*
-	- Firewall 
-	 - - *allow http*
-	 - - *allow https*
-	- Keep rest default
+- Region - any Europe
+- Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
+- Boot disk => Change 
+- Operating system - *Ubuntu*
+- Firewall 
+	- *allow http*
+	- *allow https*
+- Keep rest default
 
 7. Connect => Open in browser window
 
@@ -28,10 +26,9 @@ Dont Forget to unsubscribe after war is over!!!
 input in terminal everything that goes after `$`
 
 like:
-- @instance-2:~$`sudo adduser apps`
+- @instance-2:~$` sudo adduser apps`
 - @instance-2:~/attacker$ `sudo git fetch`
 
-Dont use this commands yet!
 
 ## 1. Install Docker
      
@@ -70,35 +67,35 @@ Dont use this commands yet!
     
 ## 3. Clone repo:
 
-    apps@instance-3:~$ exit
-    user@instance-3:~$ su apps
-    	-> Password
-    @instance-2:~$ apps@instance-2:~$ sudo git clone https://github.com/Luzhnuy/attacker.git
-    
-    
-# Attack with Docker-compose
-	
-    apps@instance-3:/home/user$ cd attacker/
-    apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
-
-### After exit:
+if there is not written `apps` before  `@`, login to `apps`:
 
     user@instance-2:~$ su apps
     	-> Password: 
-    user@instance-2:~$ cd attacker
-    apps@instance-3:/home/user$ cd attacker/
-    apps@instance-3:/home/user/attacker$ docker-compose up --build --scale attacker=10
+	
+if there is not written `/attacker` before  `user@instance-2:~`, change directory to `/attacker`:
+
+    apps@instance-2:~$ cd attacker
+		
+
+Build containers and start the attack:
+
+    apps@instance-2:~/attacker$ sudo git pull
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+
+
+if this doesnt work, you may try to attack with Python:
+
 
 # Attack with Python
 ## 1. Install python:
 
-    @instance-2:~$ sudo apt update
-    @instance-2:~$ sudo apt install software-properties-common
-    @instance-2:~$ sudo add-apt-repository ppa:deadsnakes/ppa
+    apps@instance-2:~$ sudo apt update
+    apps@instance-2:~$ sudo apt install software-properties-common
+    apps@instance-2:~$ sudo add-apt-repository ppa:deadsnakes/ppa
     	-> ENTER
-    @instance-2:~$ sudo apt install python3.8
+    apps@instance-2:~$ sudo apt install python3.8
     	-> Y
-    @instance-2:~$ sudo apt install python3-pip
+    apps@instance-2:~$ sudo apt install python3-pip
 
 ## 2. Prepare and attack:
 
@@ -106,28 +103,52 @@ Dont use this commands yet!
     @instance-2:~/attacker$ pip3 install -r requirements.txt
     @instance-2:~/attacker$ sudo python3 attack.py 500
 
-### After exit:
+You can open more consoles to maximize output (but not more than 3:
 
-    @instance-2:~$ su apps
+if there is not written `apps` before  `@`, login to `apps`:
+
+    user@instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+	
+if there is not written `/attacker` before  `user@instance-2:~`, change directory to `/attacker`:
+
+    apps@instance-2:~$ cd attacker
+				
+Start the attack:
+
+    apps@instance-2:~/attacker$ sudo git pull
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
 
-###
-leave it for a while. If progress stops:
+# Leave it for a while. If progress stops:
 
-	СTRL-C
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
-
-
-Open several new consoles for maximum effort (not more than 3):
+	СTRL-C x2
+    apps@instance-2:~/attacker$ sudo git pull
+    	with docker-compose:
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+    	or with python:
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
-    @instance-2:~$ su apps
+if it doesnt react to `CTRL-C`
+
+- Close the console
+- Restart the machine:
+	- three dots => `Stop` => wait till stop (1-3 min)
+	- three dots => `Start/Resume`
+- Open the console
+
+# Starting the attack after exit:
+
+	user@instance-2:~$ su apps
     	-> Password: 
-    @instance-2:~$ cd attacker
-    @instance-2:~/attacker$ sudo git fetch
-    @instance-2:~/attacker$ sudo python3 attack.py 500
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ sudo git pull
+	
+З docker-compose:
+
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+	
+З python:
+
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
+	
