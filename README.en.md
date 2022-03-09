@@ -154,11 +154,18 @@ if it doesnt react to `CTRL-C`
     apps@instance-2:~$ cd attacker
     apps@instance-2:~/attacker$ sudo git pull
 	
-З docker-compose:
+### with docker-compose:
+
+check if containers alive:
+	
+	apps@instance-2:~/attacker$ docker-compose top
+	
+if none or error then restart the containers:
 
     apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
 	
-З python:
+### З python:
 
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
+	
 	
