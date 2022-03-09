@@ -22,9 +22,9 @@
 >> - Operating system - *Ubuntu*
 >>> ![photo_2022-03-01_13-36-18 - Copy](https://user-images.githubusercontent.com/98760727/157469648-17521ca3-60f9-4551-9a23-1827df39c83f.jpg)
 > - Firewall 
->	- *allow http*
->	- *allow https*
->> ![photo_2022-03-01_13-36-19 - Copy](https://user-images.githubusercontent.com/98760727/157469677-c782156a-0fde-439f-931e-745547c732eb.jpg)
+>>	- *allow http*
+>>	- *allow https*
+>>> ![photo_2022-03-01_13-36-19 - Copy](https://user-images.githubusercontent.com/98760727/157469677-c782156a-0fde-439f-931e-745547c732eb.jpg)
 > - Все решту не змінюєм
 
 > 7. Connect => Open in browser window
