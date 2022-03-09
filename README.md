@@ -130,5 +130,5 @@
 запускаєм атаку з python
 
     apps@instance-2:~$ cd attacker
-    apps@instance-2:~/attacker$ sudo git fetch
+    apps@instance-2:~/attacker$ sudo git pull
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
