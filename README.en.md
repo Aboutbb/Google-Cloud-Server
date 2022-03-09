@@ -14,7 +14,6 @@ Here is step-by-step instruction how to set up google virtual machine with 300$ 
 
 6. CREATE INSTANCE
 > ![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
-
 > - Region - any Europe
 > - Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 >> ![photo_2022-03-01_13-36-16 - Copy](https://user-images.githubusercontent.com/98760727/157469599-584882e3-497d-4ed4-8b12-49c6d192dc17.jpg)
