@@ -29,7 +29,6 @@
 - @instance-2:~$`sudo adduser apps`
 - @instance-2:~/attacker$ `sudo git fetch`
 
-Ці команди ще не пиши
 
 ## 1. Install Docker
      
@@ -125,8 +124,7 @@
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
 
-#
-Залишаєте на певний час, якщо побачити що більше не атакується:
+# Залишаєте на певний час, якщо побачити що більше не атакується:
 
 		СTRL-C x2
     apps@instance-2:~/attacker$ sudo git pull
@@ -142,4 +140,19 @@
 	- три крапки => `Stop` => чекаєм поки зупиниться (1-3 хв)
 	- три крапки => `Start/Resume`
 - Відкриваєм консоль
-		
+
+# Щоб почати атаку занову після виходу з консолі:
+
+	user@instance-2:~$ su apps
+    	-> Password: 
+    apps@instance-2:~$ cd attacker
+    apps@instance-2:~/attacker$ sudo git pull
+	
+З docker-compose:
+
+    apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
+	
+З python:
+
+    apps@instance-2:~/attacker$ sudo python3 attack.py 500
+	
