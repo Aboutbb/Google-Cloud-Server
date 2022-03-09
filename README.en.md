@@ -9,11 +9,12 @@ Here is step-by-step instruction how to set up google virtual machine with 300$ 
 2. Login to your account (or create new account)
 3. Press button **Get Started For Free**
 4. Set up account (**phone and credit card needed!**) (*you can use number form here https://receive-smss.com/*)
-> 5. Compute engine => VM instances 
->> ![photo_2022-03-01_13-36-13 - Copy](https://user-images.githubusercontent.com/98760727/157469549-dd85283d-26dc-4b70-940c-88d32f28080b.jpg)
+5. Compute engine => VM instances 
+> ![photo_2022-03-01_13-36-13 - Copy](https://user-images.githubusercontent.com/98760727/157469549-dd85283d-26dc-4b70-940c-88d32f28080b.jpg)
 
-> 6. CREATE INSTANCE
->> ![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
+6. CREATE INSTANCE
+> ![photo_2022-03-01_13-36-15 - Copy](https://user-images.githubusercontent.com/98760727/157469573-e372ad5b-e8ef-48ce-815a-f50f81678858.jpg)
+
 > - Region - any Europe
 > - Machine type - *e2-highcpu-8(8 vCPU, 8 GB memory)*
 >> ![photo_2022-03-01_13-36-16 - Copy](https://user-images.githubusercontent.com/98760727/157469599-584882e3-497d-4ed4-8b12-49c6d192dc17.jpg)
@@ -28,8 +29,8 @@ Here is step-by-step instruction how to set up google virtual machine with 300$ 
 >
 > - **Keep the rest default**
 
-> 7. Connect => Open in browser window
->> ![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
+7. Connect => Open in browser window
+> ![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
 
 
 ## 0. VM terminal:
