@@ -25,7 +25,7 @@
 >>	- *allow http*
 >>	- *allow https*
 >>> ![photo_2022-03-01_13-36-19 - Copy](https://user-images.githubusercontent.com/98760727/157469677-c782156a-0fde-439f-931e-745547c732eb.jpg)
-> - Все решту не змінюєм
+> - **Все решту не змінюєм**
 
 > 7. Connect => Open in browser window
 >> ![photo_2022-03-01_13-36-20 - Copy](https://user-images.githubusercontent.com/98760727/157469700-3912dbcd-1438-47ee-984f-d459b639c12d.jpg)
