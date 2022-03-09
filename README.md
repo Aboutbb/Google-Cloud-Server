@@ -129,7 +129,7 @@
 #
 Залишаєте на певний час, якщо побачити що більше не атакується:
 
-	СTRL-C x2
+		СTRL-C x2
     apps@instance-2:~/attacker$ sudo git pull
     	якщо docker-compose:
     apps@instance-2:~/attacker$ docker-compose up --build --scale attacker=5
@@ -137,9 +137,10 @@
     apps@instance-2:~/attacker$ sudo python3 attack.py 500
     
 Якщо немає реакції на `CTRL-C`
-	- Закриваєм консоль
-	- Перезапускаєм серевер
-		- три крапки => `Stop` => чекаєм поки зупиниться (1-3 хв)
-		- три крапки => `Start/Resume`
-	- Відкриваєм консоль
+
+- Закриваєм консоль
+- Перезапускаєм серевер
+	- три крапки => `Stop` => чекаєм поки зупиниться (1-3 хв)
+	- три крапки => `Start/Resume`
+- Відкриваєм консоль
 		
